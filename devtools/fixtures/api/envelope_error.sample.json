@@ -1,0 +1,16 @@
+{
+  "data_headers": {
+    "sid": "[SID]",
+    "request_id": "[REQUEST_ID]",
+    "viewer_id": "VIEWER_MONITOR",
+    "servertime": 1788105422,
+    "result_code": 4
+  },
+  "data": {
+    "server_error": {
+      "status": 3,
+      "title": "错误提示",
+      "message": "连接中断。\\n回到标题界面。"
+    }
+  }
+}

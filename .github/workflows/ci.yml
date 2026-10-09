@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master, develop]
+  pull_request:
+    branches: [main, master, develop]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: .
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dev dependencies
+        run: pip install pytest ruff
+
+      - name: Verify help text sync
+        run: python scripts/sync_help_text.py --check
+
+      - name: Check documentation links
+        run: python scripts/check_docs.py
+
+      - name: Ruff (scripts and tests only)
+        run: ruff check scripts tests conftest.py
+
+      - name: Pytest
+        run: pytest
+        env:
+          KCR_TOOLING: "1"

@@ -1,0 +1,10 @@
+{
+  "data_headers": {
+    "sid": "[SID]",
+    "request_id": "[REQUEST_ID]",
+    "viewer_id": "VIEWER_MONITOR",
+    "servertime": 1788105422,
+    "result_code": 1
+  },
+  "data": {}
+}

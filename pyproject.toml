@@ -1,0 +1,42 @@
+[project]
+name = "kanna-connection-redive"
+version = "2.0.0"
+description = "HoshinoBot PCR 会战自动报刀与 Web 面板模块"
+readme = "readme.md"
+requires-python = ">=3.9"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "ruff>=0.4",
+]
+
+[tool.pytest.ini_options]
+# clanbattle/、knife_budget/ 下部分 test_*.py 需在 Hoshino 环境手动运行；CI 仅跑 tests/
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-q"
+filterwarnings = [
+    "ignore::DeprecationWarning",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+extend-exclude = [
+    "web/dist",
+    "web/node_modules",
+    "docs/backup",
+    "data",
+]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
+ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+"clanbattle/__init__.py" = ["F401", "E402"]
+"clanbattle/user_help.py" = ["ALL"]
+"scripts/*" = ["E402"]

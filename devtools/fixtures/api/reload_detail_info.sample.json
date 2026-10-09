@@ -1,0 +1,10 @@
+{
+  "data_headers": {
+    "viewer_id": "VIEWER_MONITOR",
+    "result_code": 1
+  },
+  "data": {
+    "fighter_num": 2,
+    "current_hp": 659414899
+  }
+}

@@ -1,0 +1,24 @@
+node_modules
+# dist/ 预构建产物随仓库发布（见模块根 .gitignore）；改前端后本地 npm run build 覆盖
+dist-ssr
+.DS_Store
+*.local
+.env.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Vite 每次加载 vite.config.ts 都会在项目根目录生成一份临时配置副本
+# （vite.config.ts.timestamp-<毫秒>-<hash>.mjs）。正常退出时会自己删掉，
+# 但进程被强杀 / 在 Z: 这类网络盘上回收失败时会留下来，且内容里带着
+# 本机绝对路径，不该提交进仓库。
+vite.config.ts.timestamp-*.mjs

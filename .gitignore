@@ -1,0 +1,60 @@
+# IDE
+.vscode/
+.idea/
+
+# Python
+*.pyc
+__pycache__/
+*.pyo
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+/build/
+/dist/
+!web/dist/
+!web/dist/**
+build/
+
+# 模块遗留单文件
+rungroup.json
+clanbattlework.json
+data.db
+token.json
+
+# 运行时数据（勿提交）— 含 QQ 号目录名、账号明文、群库
+data/**
+!data/.gitkeep
+
+resource/data/setting_clanbattle.json
+resource/data/*.db
+resource/data/token.json
+
+# 账号与群库（双重保险）
+**/account/**
+**/clanbattle/**/*.db
+**/clanbattle/**/*.json
+!**/clanbattle/**/*.example.json
+
+# 日志（全部不入库）
+*.log
+**/*.log
+log/
+logs/
+
+# 开发者工具输出（PNG 预览，本地生成）
+devtools/output/**
+
+# Web
+web/node_modules/
+# web/dist/ 预构建并入库，部署可直接挂载；本地开发仍 npm run build 覆盖
+
+# 内部归档（含旧预览数据，不参与开源发布）
+docs/backup/
+
+# 本地 API 原始留档（仅 fixtures 脱敏版入库）
+samples/
+archive_output/
+
+# 环境
+.env
+.env.*

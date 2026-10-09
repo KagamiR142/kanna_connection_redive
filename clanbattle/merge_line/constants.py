@@ -1,0 +1,7 @@
+"""合刀线提醒常量。"""
+from __future__ import annotations
+
+DEFAULT_MERGE_LINE = 5_000_000_000
+MIN_SAMPLE_DAMAGE = 1_500_000_000
+MERGE_LINE_MULTIPLIER = 1.7
+SAMPLE_SIZE = 20

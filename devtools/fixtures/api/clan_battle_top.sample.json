@@ -1,0 +1,62 @@
+{
+  "data_headers": {
+    "viewer_id": "VIEWER_MONITOR",
+    "result_code": 1
+  },
+  "data": {
+    "clan_battle_id": 1091,
+    "lap_num": 40,
+    "period_rank": 128,
+    "boss_info": [
+      {
+        "lap_num": 40,
+        "order_num": 1,
+        "enemy_id": 401808404,
+        "max_hp": 1320000000,
+        "current_hp": 659414899
+      },
+      {
+        "lap_num": 40,
+        "order_num": 2,
+        "enemy_id": 401808405,
+        "max_hp": 1360000000,
+        "current_hp": 1077344251
+      },
+      {
+        "lap_num": 41,
+        "order_num": 3,
+        "enemy_id": 401808406,
+        "max_hp": 1400000000,
+        "current_hp": 604392971
+      },
+      {
+        "lap_num": 41,
+        "order_num": 4,
+        "enemy_id": 401808407,
+        "max_hp": 1440000000,
+        "current_hp": 0
+      },
+      {
+        "lap_num": 40,
+        "order_num": 5,
+        "enemy_id": 401808408,
+        "max_hp": 1480000000,
+        "current_hp": 566105778
+      }
+    ],
+    "damage_history": [
+      {
+        "viewer_id": "VIEWER_PLAYER_1",
+        "enemy_id": 401808408,
+        "name": "[PLAYER_NAME]",
+        "damage": 1542,
+        "kill": 0,
+        "create_time": 1788105471,
+        "history_id": 582392,
+        "lap_num": 40,
+        "order_num": 5,
+        "is_auto": 0
+      }
+    ]
+  }
+}
