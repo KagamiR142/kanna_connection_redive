@@ -9,7 +9,7 @@
 | 成员鉴权 | Cookie Session（登录后） |
 | 运维 OpenAPI | Header `X-Admin-Key` = `api.admin_key`（配置须非空、非示例占位；**无**代码层面的长度限制） |
 
-完整游戏 API 留档（脱敏样本）见 [`backup/blueprint/PCR会战API接口留档参考.md`](../backup/blueprint/PCR会战API接口留档参考.md)。
+游戏 API 脱敏样本见 [`devtools/fixtures/api/clan_battle_top.sample.json`](../../devtools/fixtures/api/clan_battle_top.sample.json) 等同目录下的 `envelope_*.json`。
 
 ---
 
