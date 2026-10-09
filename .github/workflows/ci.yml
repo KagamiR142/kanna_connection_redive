@@ -20,8 +20,8 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install dev dependencies
-        run: pip install pytest ruff
+      - name: Install dependencies
+        run: pip install pytest ruff pillow loguru pypinyin "sqlalchemy[asyncio]" httpx
 
       - name: Verify help text sync
         run: python scripts/sync_help_text.py --check
