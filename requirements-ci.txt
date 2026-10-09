@@ -1,0 +1,10 @@
+# GitHub Actions / 无 Hoshino 环境下跑 tests/ 与 scripts/
+pytest>=7.0
+ruff>=0.4
+pillow>=9.0
+loguru>=0.7
+pypinyin>=0.49
+sqlmodel>=0.0.14
+sqlalchemy[asyncio]>=2.0
+aiosqlite>=0.19
+httpx>=0.27
